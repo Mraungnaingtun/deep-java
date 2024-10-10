@@ -1,4 +1,4 @@
-package org.logant.Basic.Record;
+package org.logant.All.Enum.Record;
 
 // they do not require explicit set methods since they are immutable
 // can use getter methods, toString(), hashCode(), and equals()

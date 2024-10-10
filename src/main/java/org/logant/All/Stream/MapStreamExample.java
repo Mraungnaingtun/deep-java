@@ -1,4 +1,4 @@
-package org.logant.Basic.Stream;
+package org.logant.All.Stream;
 
 import java.util.HashMap;
 import java.util.List;
@@ -8,8 +8,20 @@ import java.util.stream.Collectors;
 
 public class MapStreamExample {
 
+  public static void showAll(){
+        Map<String,Object> newMap = new HashMap<>();
+        newMap.put("first","Aung");
+        newMap.put("last","Chay");
+        newMap.put("Address", "Rakhine");
+        newMap.put("age", 24);
+
+        newMap.values().stream().forEach(System.out::println);
+  }      
+
   public void showAll1(){
-      var map = new HashMap<String, Integer>();
+
+      var map = new HashMap<String, Integer>(); //<---------using var keyword
+
       map.put("Apple", 1);
       map.put("Banana", 2);
       map.put("Cherry", 3);

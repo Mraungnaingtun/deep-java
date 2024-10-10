@@ -1,9 +1,9 @@
-package org.logant.Basic.Var;
+package org.logant.All.Var;
 
 import java.util.HashMap;
 import java.util.List;
 
-import org.logant.Basic.Record.StudentRecord;
+import org.logant.All.Enum.Record.StudentRecord;
 
 
 public class VarKeyword {

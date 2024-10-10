@@ -1,4 +1,4 @@
-package org.logant.Basic.Enum;
+package org.logant.All.Enum;
 
 
 public enum ResponseCode {

@@ -1,4 +1,4 @@
-package org.logant.Basic.Stream;
+package org.logant.All.Stream;
 
 import java.util.ArrayList;
 import java.util.List;
