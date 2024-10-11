@@ -6,12 +6,13 @@ package org.logant.Basic;
 // Static Variables: 
 //========================================
 // ### Java Data Types:
+//-------------------
 // 1)Primitive Data Types:
 // byte, short, int, long, float, double, char, and boolean.
 //--------------------------------------------
 // 2)Non-Primitive (Reference) Data Types:
 // Strings, arrays, classes, and interfaces.
-//-----------------------------------------------
+//--------------------------------------------
 public class VariablesAndDataTypes {
 
     // Instance Variable: belongs to an object
@@ -66,3 +67,17 @@ public class VariablesAndDataTypes {
         }
     }
 }
+
+//-------------Java Wrapper Classes--------------------------
+// allows primitive types to be treated as objects when needed 
+//eg. for use in collections like ArrayList, 
+
+// Primitive Type  <->	Wrapper Class
+// byte	                Byte
+// short	            Short
+// int	                Integer
+// long	                Long
+// float	            Float
+// double	            Double
+// char	                Character
+// boolean	            Boolean
