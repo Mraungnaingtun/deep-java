@@ -10,7 +10,7 @@ Basic programming language concepts
 5.Functions/Methods                   ✔
 6.Objects and Classes
 7.Arrays/Lists                        ✔
-8.Error Handling
+8.Error Handling                      ✔
 9.Input/Output
 10.Comments
 
