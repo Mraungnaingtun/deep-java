@@ -3,7 +3,7 @@ package org.logant.Basic;
 // FunctionsDemo.java
 // A guide to Java Methods
 
-public class FunctionsDemo {
+public class MethodDemo {
 
     // 1. Instance Method: Requires an object of the class to be called
     public void greet(String name) {
@@ -47,7 +47,7 @@ public class FunctionsDemo {
         System.out.println("Addition: " + add(10, 5));
 
         // Creating an instance of FunctionsDemo to call instance methods
-        FunctionsDemo demo = new FunctionsDemo();
+        MethodDemo demo = new MethodDemo();
 
         // Calling instance methods
         demo.greet("Aung");
