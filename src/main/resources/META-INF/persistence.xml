@@ -1,0 +1,40 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.2">
+    <persistence-unit name="my-persistence-unit">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>org.logant.JPA.Account</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/clean_jpa"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value="root"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            
+            <!-- The dialect is essentially a bridge between Hibernate and the underlying database. -->
+            <!-- The dialect property ensures that Hibernate generates 
+            the correct SQL syntax for your specific database. -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+            <!-- =================================================================================== -->
+            <!-- This property controls how Hibernate handles 
+            the database schema (tables, columns, etc.) based on your   . -->
+            <!-- ***************************************-->
+             <!-- It tells Hibernate whether to 
+             automatically create, update, or validate
+              the database schema when the application runs. -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
+
+<!-- 1.   none: No action on the schema.
+
+     2.   validate: Validates the schema but makes no changes.
+
+     3.   update: Updates the schema by adding missing tables/columns.
+
+     4.   create: Drops and recreates the schema (deletes existing data).
+
+     5.   create-drop: Drops and recreates the schema, then drops it again at shutdown.
+
+     6.   create-only: Creates the schema without dropping it first or at shutdown. -->
+
+
+

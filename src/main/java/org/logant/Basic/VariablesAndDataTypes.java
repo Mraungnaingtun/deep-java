@@ -7,8 +7,10 @@ package org.logant.Basic;
 //========================================
 // ### Java Data Types:
 //-------------------
-// 1)Primitive Data Types:
-// byte, short, int, long, float, double, char, and boolean.
+/*  1)Primitive Data Types:
+ byte, short, int,   long,  float, double,  char, and boolean
+ 8bit, 16bit, 32bit, 64bit, 32bit, 64bit,   16bit,      1bit
+*/
 //--------------------------------------------
 // 2)Non-Primitive (Reference) Data Types:
 // Strings, arrays, classes, and interfaces.
