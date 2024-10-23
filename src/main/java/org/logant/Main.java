@@ -1,10 +1,10 @@
 package org.logant;
 
-import org.logant.StandardJPA.StandardJPACode;
+import org.logant.Select.SimpleSelect;
 
 public class Main {
-    public static void main(String[] args) {
-        StandardJPACode standardJPACode = new StandardJPACode();
-        standardJPACode.transferMoney(1L, 2L, 1000.0);
+     public static void main(String[] args) {
+        System.out.println("\n\n");
+        SimpleSelect.simpleSelect();
     }
 }
