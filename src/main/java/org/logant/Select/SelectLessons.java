@@ -9,21 +9,16 @@ import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 
-public class SimpleSelect {
+public class SelectLessons {
 
-    public static void simpleSelect() {
+    public static void FindByName(String name) {
         MongoDatabase database = null;
         MongoCursor<Document> cursor = null;
         try {
             database = MongoDBConnection.getConnection();
             MongoCollection<Document> collection = database.getCollection("firstCollection");
-
-            // Create the query to find documents with name "aung chay"
-            Bson query = Filters.and(
-                    Filters.eq("name", "aung chay"),
-                    Filters.gte("age", 24),
-                    Filters.eq("language", "java"));
-
+            
+            Bson query = Filters.eq("name",name);
             // Execute the query
             cursor = collection.find(query).iterator();
 
