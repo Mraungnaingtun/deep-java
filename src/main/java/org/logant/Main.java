@@ -1,10 +1,16 @@
 package org.logant;
 
-import org.logant.StandardJPA.StandardJPACode;
+import org.logant.MULTITHREAD.MultithreadTest;
 
 public class Main {
     public static void main(String[] args) {
-        StandardJPACode standardJPACode = new StandardJPACode();
-        standardJPACode.transferMoney(1L, 2L, 1000.0);
+       
+        int numberOfThreads = 10;
+        for (int i = 1; i <= numberOfThreads; i++) {
+            MultithreadTest thread = new MultithreadTest(i);
+            thread.start();
+        }
+        
+        System.out.println("Main Thread is Running");
     }
 }
