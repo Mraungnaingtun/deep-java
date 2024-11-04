@@ -19,7 +19,7 @@ public class SelectLessons {
             MongoCollection<Document> collection = database.getCollection("firstCollection");
             
             Bson query = Filters.eq("name",name);
-            Bson query2 = Filters.ne("aung chay",name);
+            // Bson query2 = Filters.ne("aung chay",name);
             // Execute the query
             cursor = collection.find(query).iterator();
 
