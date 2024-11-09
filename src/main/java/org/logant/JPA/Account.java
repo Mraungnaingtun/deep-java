@@ -1,4 +1,4 @@
-package org.logant.StandardJPA;
+package org.logant.JPA;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

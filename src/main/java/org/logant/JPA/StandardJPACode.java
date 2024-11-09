@@ -1,4 +1,4 @@
-package org.logant.StandardJPA;
+package org.logant.JPA;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
