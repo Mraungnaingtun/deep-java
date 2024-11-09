@@ -36,7 +36,6 @@ public class MethodExamples {
     //---------------------------------------------------
     // 5. Synchronized Method - allows only one thread at a time
     private int counter = 0;
-
     public synchronized void synchronizedMethod() {
         counter++;
         System.out.println("Synchronized method, counter: " + counter);
