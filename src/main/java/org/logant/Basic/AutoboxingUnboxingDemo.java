@@ -27,6 +27,7 @@ public class AutoboxingUnboxingDemo {
         Integer nullableInt = null;
 
         try {
+            @SuppressWarnings("null")
             int unboxedInt = nullableInt; // This will throw NullPointerException
             System.out.println("Unboxed int: " + unboxedInt);
         } catch (NullPointerException e) {
