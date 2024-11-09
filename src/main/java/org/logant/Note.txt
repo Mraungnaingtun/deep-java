@@ -1,0 +1,53 @@
+
+Basic programming language concepts
+------------------------------------
+1.Variables         ✔
+2.Data Types        ✔
+3.Operators         ✔
+4.Control Structures (if, loops)      ✔  
+5.Functions/Methods                   ✔
+6.Objects and Classes
+7.Arrays/Lists                        ✔
+8.Error Handling                      ✔
+9.Input/Output
+10.Comments
+
+
+Java SE (Standard Edition)
+--------------------------
+- Purpose: General-purpose programming for desktop and server applications.
+- Core Libraries: Includes core language features, basic APIs for I/O, networking, security, collections, and database access.
+- Key Features:
+---------------
+- JDBC (Java Database Connectivity)
+- JavaFX for building GUI applications
+- Concurrency and Multithreading utilities
+- Swing and AWT for GUI
+- Java Collections Framework for data structures like lists and maps
+
+===========================================================================
+
+Java EE (Enterprise Edition)
+----------------------------
+- Purpose: Focuses on enterprise-level applications, web development, and distributed computing.
+- Core Libraries: Adds components for creating large-scale, multi-tiered, scalable, and secure network applications.
+- Key Features:
+- Servlets and JSP for web development
+- EJB (Enterprise JavaBeans) for business logic
+- JAX-RS for RESTful web services ---------------- use in mit
+- JPA (Java Persistence API) for ORM
+- JMS (Java Messaging Service) for messaging
+- WebSocket API for real-time applications
+
+===========================================================================
+
+Java ME (Micro Edition)
+--------------------------------
+- Purpose: Optimized for resource-constrained devices like mobile phones, PDAs, and embedded systems.
+- Core Libraries: Subset of Java SE, with added libraries specific to mobile and embedded application development.
+- Key Features:
+- CLDC (Connected Limited Device Configuration) for basic runtime
+- MIDP (Mobile Information Device Profile) for UI and network access on mobile devices
+- Profiles for specific device types, e.g., PDA, IoT, TV devices
+- Lightweight UI components and restricted API to suit limited devices
+
