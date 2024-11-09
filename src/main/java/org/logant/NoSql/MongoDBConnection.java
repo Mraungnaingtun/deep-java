@@ -1,4 +1,4 @@
-package org.logant.Utils;
+package org.logant.NoSql;
 
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;

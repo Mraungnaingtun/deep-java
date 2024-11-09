@@ -1,8 +1,7 @@
-package org.logant.Select;
+package org.logant.NoSql;
 
 import org.bson.Document;
 import org.bson.conversions.Bson;
-import org.logant.Utils.MongoDBConnection;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
