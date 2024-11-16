@@ -71,6 +71,7 @@ public class MapStreamExample {
           System.out.println("\nSorted by keys:");
           myMap.entrySet()
                   .stream()
+                  .parallel()
                   .sorted(Map.Entry.comparingByKey())
                   .forEach(entry -> System.out.println(entry.getKey() + ": " + entry.getValue()));
 // -----------------------------------------------------------------------------------------

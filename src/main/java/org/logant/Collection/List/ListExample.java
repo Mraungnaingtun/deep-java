@@ -93,8 +93,6 @@ public class ListExample {
         linkedList.remove("Jerry");
         System.out.println("LinkedList after removal: " + linkedList);
     }
-    
-
 }
 
 

@@ -1,6 +1,7 @@
 package org.logant.StreamAPI;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 import java.util.Map;
@@ -14,6 +15,10 @@ public class ArrayListStreamExample {
         names.add("Bob");
         names.add("Charlie");
         names.add("Alice");
+
+
+        List<String> firstNames = Arrays.asList("Abc","Bca");
+        firstNames.stream().forEach(System.out::println);
 // -----------------------------------------------------------------------------------------
         // Filtering names that start with "A"
         List<String> filteredNames = names.stream()
