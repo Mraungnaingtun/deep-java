@@ -1,16 +1,21 @@
 package org.logant;
 
+import org.logant.OOP.Inheritance;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println();
-        new TestBlock();
-        System.out.println();
-        new TestBlock();
+    //    new Block();
+    //    new Block();
+
+
+        Inheritance inheritance = new Inheritance();
+        inheritance.showWhatIHave();
     }
 }
 
-class TestBlock {
+class Block {
+
     {
         System.out.println("No Static Block1");
     }
