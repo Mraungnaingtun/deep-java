@@ -3,7 +3,7 @@ package org.logant.All.Var;
 import java.util.HashMap;
 import java.util.List;
 
-import org.logant.All.Enum.Record.StudentRecord;
+import org.logant.All.Record.StudentRecord;
 
 
 public class VarKeyword {

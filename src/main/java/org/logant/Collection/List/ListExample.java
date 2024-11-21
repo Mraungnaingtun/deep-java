@@ -4,47 +4,40 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-// Iterable
-// └── Collection
-//     ├── List
-//     │   ├── ArrayList
-//     │   ├── LinkedList
-//     │   └── Vector
-//     ├── Set
-//     │   ├── HashSet
-//     │   ├── LinkedHashSet
-//     │   └── TreeSet
-//     ├── Queue
-//     │   ├── PriorityQueue
-//     │   ├── ArrayDeque
-//     │   ├── LinkedList (also implements Deque)
-//     │   └── DelayQueue
-//     ├── Deque
-//     │   ├── ArrayDeque
-//     │   └── LinkedList
-//     └── Map (does not implement Collection)
-//         ├── HashMap
-//         ├── LinkedHashMap
-//         ├── TreeMap
-//         ├── Hashtable
-//         └── WeakHashMap
-//         └── ConcurrentHashMap
-
+/*
+ * List Interface
+ * -----------
+ * 1) Accessing a Single Object
+ * -> add(index, element)
+ * -> get(index)
+ * -> set(index, element) -- replace
+ * -> remove(index)
+ * ---------------------------------
+ * 2) Finding the Index of an Object
+ * -> indexOf(element)
+ * -> lastIndexOf(element)
+ * ---------------------------------
+ * 3) Getting a SubList
+ * -> subList(start, end)
+ * ---------------------------------
+ * 4) Inserting a Collection
+ * ->  addAll(int index, Collection collection).
+ * 
+ * 
+ * IndexOutOfBoundsException exception, if index is not valid
+ */
 
 public class ListExample {
 
-    public static void showAll() {
-    }
-
-    // 1. ArrayList
-    // Characteristics:
-    // Implements a resizable array.
-    // Provides fast random access (index-based).
-    // Not synchronized (not thread-safe).
-    // Allows null elements.
     public void ArrayListExample() {
-        List<String> arrayList = new ArrayList<>();
+        /*
+         * ArrayList
+         * Provides fast random access (index-based).
+         * Not synchronized (not thread-safe).
+         * Allows null elements.
+         */
 
+        List<String> arrayList = new ArrayList<>();
 
         // Adding elements
         arrayList.add("Apple");
@@ -63,21 +56,25 @@ public class ListExample {
         System.out.println("ArrayList after removal: " + arrayList);
     }
 
-//------------------------------------------------------------------------------------------------------------------------
-    //Implements a doubly-linked list.
-    //     Better performance for frequent insertion/removal operations (especially at the beginning or middle).
-    //     Slower for random access
-    //     Not synchronized.
-    //     Can also be used as a Queue or Deque.
+    // ------------------------------------------------------------------------------------------------------------------------
+
     public void LinkedListExample() {
-         // Creating a LinkedList of Strings
+        /*
+         * doubly-linked list.
+         *
+         * Slower for random access
+         * Not synchronized
+         * Faster than array
+         * diminished(လျော့သွား) by modern hardware
+         * can access its first and last element faster than an ArrayList
+         */
+
         List<String> linkedList = new LinkedList<>();
 
         // Adding elements
         linkedList.add("Tom");
         linkedList.add("Jerry");
         linkedList.add("Spike");
-
         // Adding elements at specific positions
         linkedList.add(2, "Tyke");
 
@@ -94,5 +91,3 @@ public class ListExample {
         System.out.println("LinkedList after removal: " + linkedList);
     }
 }
-
-

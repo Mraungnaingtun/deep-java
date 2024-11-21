@@ -6,12 +6,12 @@ Basic programming language concepts
 3.Operators         ✔
 4.Control Structures (if, loops)      ✔  
 5.Functions/Methods                   ✔
-6.Objects and Classes
+6.Objects and Classes                 ✔
 7.Arrays/Lists                        ✔
 8.Error Handling                      ✔
 9.Input/Output
 10.Comments
-
+ 
 
 Java SE (Standard Edition)
 --------------------------

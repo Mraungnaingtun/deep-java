@@ -7,8 +7,10 @@ public class ArrayUsageExample {
     public static void mainTest() {
 //---------------------------------------------------------------
         // 1. Declaring and Initializing Arrays
+
         int[] numbers = {1, 2, 3, 4, 5};
         String[] fruits = new String[3]; // Array with default size
+        
         fruits[0] = "Apple";
         fruits[1] = "Banana";
         fruits[2] = "Cherry";
