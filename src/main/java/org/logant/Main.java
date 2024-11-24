@@ -1,22 +1,24 @@
 package org.logant;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class Main {
+
     public static void main(String[] args) {
 
-        Collection<String> strings = new ArrayList<>();
-        strings.add("one");
-        strings.add("two");
-        strings.add("three");
+        LinkedHashMap<String, Integer> linkedHashMap = new LinkedHashMap<>();
+        linkedHashMap.put("Cherry", 3);
+        linkedHashMap.put("Apple", 1);
+        linkedHashMap.put("Banana", 2);
 
-        strings.remove("three");
+        linkedHashMap.put("Orange", 4);
 
-        System.out.println(strings);
-
+        // Iterating through the LinkedHashMap
+        linkedHashMap.forEach((key, value) -> System.out.println(key + ": " + value));
     }
-    
+
 }
-
-

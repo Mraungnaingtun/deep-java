@@ -4,22 +4,27 @@ Collection Interface
 ----------
 -> order ကတိတိကျကျ မဟိ
 
-
-
-List 
-----
+List Interface
+---------------------
 -> ထည့်ခရေ order အတိုင်း သိမ်ပီးထားရေ
 1)Get an element at a specific index, or delete it
 2)Insert an element or replace an element at a specific position
 3)Get a range of elements between two indexes.
 -----------------------------------------------------------------------------
-Set
----
+Set Interface
+--------------
 -> cannot have duplicates in a Set. 
 -> does not provide indexing
 -> doesn’t add extra methods compared to Collection
+--------------------------------------------------
+1)Use (HashSet) when you don't care about the order and want fast performance.
+2)Use (LinkedHashSet) if you need to preserve the insertion order.
+3)Use (TreeSet) if you need a sorted order.
+--------------------------------------------------------------------------------
 
-1) SortedSet
+
+
+1) SortedSet Interface
 ------------
 -> ထည့်ရေအတိုင်းမဟုတ်ဘဲနက် တစ်ခါတည်း order စီပြီးသားသိမ်းထားရေ
 -> You can get the lowest element, and the largest element of the set

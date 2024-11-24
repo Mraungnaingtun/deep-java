@@ -1,4 +1,4 @@
-package org.logant.lambda;
+package org.logant.Lambda;
 
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
@@ -12,7 +12,6 @@ public class Example {
     /*
      * A lambda expression is an implementation of the only abstract method in
      * functional interface
-     * 
      */
 
     public Example() {
@@ -50,11 +49,11 @@ public class Example {
         DoubleUnaryOperator sqrt = a -> Math.sqrt(a);
         double result = sqrt.applyAsDouble(20);
         System.out.println("Max: " + result);
-        // -----------------------
+        // ------------------------------------------------
         DoubleUnaryOperator sqrt1 = Math::sqrt;
         double result1 = sqrt1.applyAsDouble(20);
         System.out.println("Max: " + result1);
-        // ----------------------------------------
+        // ------------------------------------------------
 
         // Unbound Method References(RefType::instanceMethod)
         Function<String, Integer> toLength = s -> s.length();

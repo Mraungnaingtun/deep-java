@@ -9,12 +9,15 @@ import java.util.function.Predicate;
 
 /*
 
- Iterable
+Iterable
 └── Collection
     ├── List
     └── Set
         └── SortedSet
             └── NavigableSet
+    ├── Queue
+    └── Deque
+
 
  */
 

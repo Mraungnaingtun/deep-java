@@ -75,6 +75,7 @@ public class ListExample {
         linkedList.add("Tom");
         linkedList.add("Jerry");
         linkedList.add("Spike");
+        
         // Adding elements at specific positions
         linkedList.add(2, "Tyke");
 
