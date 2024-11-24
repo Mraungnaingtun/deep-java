@@ -14,7 +14,6 @@ public class Main {
         linkedHashMap.put("Cherry", 3);
         linkedHashMap.put("Apple", 1);
         linkedHashMap.put("Banana", 2);
-
         linkedHashMap.put("Orange", 4);
 
         // Iterating through the LinkedHashMap
