@@ -1,0 +1,97 @@
+The `java.time` package in Java 8 and later provides a comprehensive API for working with dates and times. Here’s a grouped list of all relevant classes, interfaces, and enums, organized for clarity:
+
+---
+
+### **Core Classes**
+- **Date-Time Objects (Immutable)**
+  - `LocalDate` — Date without time (e.g., `2024-12-03`).
+  - `LocalTime` — Time without date (e.g., `10:15:30`).
+  - `LocalDateTime` — Date and time without timezone (e.g., `2024-12-03T10:15:30`).
+  - `ZonedDateTime` — Date and time with timezone (e.g., `2024-12-03T10:15:30+01:00[Europe/Paris]`).
+  - `OffsetDateTime` — Date and time with an offset (e.g., `2024-12-03T10:15:30+01:00`).
+  - `OffsetTime` — Time with an offset (e.g., `10:15:30+01:00`).
+
+- **Partial Date-Time Objects**
+  - `Year` — Represents a year (e.g., `2024`).
+  - `YearMonth` — Represents a year and month (e.g., `2024-12`).
+  - `MonthDay` — Represents a month and day (e.g., `12-03`).
+
+---
+
+### **Temporal Access and Adjustment**
+- **Interfaces**
+  - `Temporal` — Superinterface for all temporal-based objects.
+  - `TemporalAccessor` — Provides read-only access to temporal objects.
+  - `TemporalAdjuster` — Used for modifying temporal objects (e.g., `firstDayOfNextMonth()`).
+  - `TemporalAmount` — Represents an amount of time (e.g., `Duration` or `Period`).
+
+- **Classes**
+  - `Instant` — Represents a point on the timeline (e.g., `2024-12-03T10:15:30Z`).
+  - `Duration` — Represents a time-based amount of time (e.g., `PT2H30M`).
+  - `Period` — Represents a date-based amount of time (e.g., `P2Y3M` for 2 years and 3 months).
+
+---
+
+### **Formatting and Parsing**
+- **Classes**
+  - `DateTimeFormatter` — Used for formatting and parsing date-time objects.
+  - `DateTimeFormatterBuilder` — Used for building custom formatters.
+
+---
+
+### **Enums**
+- **Chronological Fields and Units**
+  - `ChronoField` — Represents the standard fields of date and time (e.g., `YEAR`, `MONTH_OF_YEAR`).
+  - `ChronoUnit` — Represents units of time (e.g., `DAYS`, `HOURS`).
+
+- **Date-Time Constants**
+  - `DayOfWeek` — Represents days of the week (e.g., `MONDAY` to `SUNDAY`).
+  - `Month` — Represents months of the year (e.g., `JANUARY` to `DECEMBER`).
+
+---
+
+### **Chronologies and Eras**
+- **Classes**
+  - `Chronology` — Represents a calendar system.
+  - `IsoChronology` — ISO calendar system.
+  - `HijrahChronology` — Islamic Hijrah calendar system.
+  - `JapaneseChronology` — Japanese calendar system.
+  - `MinguoChronology` — Taiwan calendar system.
+  - `ThaiBuddhistChronology` — Thai Buddhist calendar system.
+
+- **Enums**
+  - `IsoEra` — Represents ISO standard eras (`BCE`, `CE`).
+  - `JapaneseEra` — Represents eras in the Japanese calendar.
+
+---
+
+### **Utility Classes**
+- `Clock` — Provides access to the current date and time using a time zone.
+- `ZoneId` — Represents a time-zone ID (e.g., `Europe/Paris`).
+- `ZoneOffset` — Represents a time-zone offset (e.g., `+02:00`).
+
+---
+
+### **Extensions for Specialization**
+- **Abstract Classes**
+  - `ChronoLocalDate` — A date without a time in an arbitrary chronology.
+  - `ChronoLocalDateTime` — A date-time without a time-zone in an arbitrary chronology.
+  - `ChronoZonedDateTime` — A date-time with a time-zone in an arbitrary chronology.
+
+- **Interfaces**
+  - `Era` — Represents a time-frame in a chronology.
+  - `ChronoPeriod` — Represents a period in a specific chronology.
+
+---
+
+### **Key Relationships**
+- **Temporal Objects**
+  - Core date-time objects (`LocalDate`, `LocalTime`, etc.) implement `Temporal` and `TemporalAccessor`.
+
+- **Formatters**
+  - `DateTimeFormatter` works with all date-time objects for formatting and parsing.
+
+- **Zones**
+  - `ZoneId` and `ZoneOffset` work with `ZonedDateTime` and `OffsetDateTime`.
+
+This categorization highlights how the Java Date-Time API provides powerful tools for handling a wide variety of date and time use cases.
