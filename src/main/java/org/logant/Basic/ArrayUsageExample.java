@@ -30,6 +30,10 @@ public class ArrayUsageExample {
             System.out.println("numbers[" + i + "]: " + numbers[i]);
         }
 
+        for(int number : numbers){
+            System.out.println(number);
+        }
+
         System.out.println("\nIterating using enhanced for-loop:");
         for (String fruit : fruits) {
             System.out.println(fruit);

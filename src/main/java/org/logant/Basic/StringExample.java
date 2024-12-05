@@ -4,24 +4,89 @@ public class StringExample {
 
     /*
      * String are immutable
+     * 
+     * ----------create with string literal----------------
+     * 
+     * String s = "AString";
+     * when found a string literal Compiler create a String Object with its value
+     * 
+     * ---------- create with constructor ------
+     * 
+     * there are 13 constructors to create a String Object in String Class
+     * 
+     * ---------------------------------------------------
+     * The String class has a number of methods,
+     * create and return a new string because string are immutable
+     * 
      */
 
-    // store string1 in heap
-    // store "Value1" in string pool
+    // store "Value1" in heap and String Constant pool(SCP) 
+    // reference will point one in heap not in SCP
     String string1 = new String("Value1");
 
-    // stored in string pool
-    // string2 references the "Value2" object directly from the pool
+    // stored in only SCP
+    // reference will point to SCP address
     String string2 = "Value2";
 
     // multi line
     String abc = """
-            fjkadlfaksdf
-            a;sdfkasdk
-            ;asdfkalskdf
-            asdfaslkd
-            asdf
+            This is string
+            this is a part of it
             """;
+
+    void studyStringBuilderClass() {
+        /*
+         * StringBuilder Class ✌🏻
+         * - mutable
+         * - Thread Unsafe:(not synchronized)
+         * 
+         */
+
+        // Create a StringBuilder
+        StringBuilder sb = new StringBuilder("Hello");
+
+        // Append a string
+        sb.append(" World");
+        System.out.println("After append: " + sb); // Output: Hello World
+
+        // Insert a string
+        sb.insert(5, ",");
+        System.out.println("After insert: " + sb); // Output: Hello, World
+
+        // Replace a substring
+        sb.replace(7, 12, "Java");
+        System.out.println("After replace: " + sb); // Output: Hello, Java
+
+        // Delete a substring
+        sb.delete(5, 6);
+        System.out.println("After delete: " + sb); // Output: Hello Java
+
+        // Reverse the string
+        sb.reverse();
+        System.out.println("After reverse: " + sb); // Output: avaJ olleH
+
+    }
+
+    void studyStringBufferClass(){
+        /*
+         * StringBuffer
+         * - mutable
+         * - thread safe - All methods are synchronized ( safe for use in multi-threaded )
+         * - Slower than StringBuilder
+         */
+
+        // Create a StringBuffer
+        StringBuffer sb = new StringBuffer("Hello");
+
+        // Append a string
+        sb.append(" World");
+        System.out.println("After append: " + sb); // Output: Hello World
+
+        // Insert a string
+        sb.insert(5, ",");
+        System.out.println("After insert: " + sb); // Output: Hello, World
+
+    }
 
     public static void oftenUse() {
 
@@ -110,6 +175,4 @@ public class StringExample {
         System.out.println();
     }
 
-
-    
 }

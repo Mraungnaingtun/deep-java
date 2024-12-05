@@ -1,12 +1,15 @@
 package org.logant;
 
-
-import org.logant.DateTimeAPI.ParsingandFormatting;
-
 public class Main {
 
-    public static void main(String[] args) {
-        ParsingandFormatting.showFormatting();
-    }
-
+        public static void main(String[] args) 
+        {
+          String a = "Niraj";
+          change(a);
+          System.out.println("A = " + a);
+        }
+        public static void change(String x) 
+        {
+          x = "Aghera";
+        }
 }

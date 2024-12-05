@@ -1,21 +1,17 @@
 package org.logant.Basic;
 
-// #### Java Variable Types:
-// Local Variables:-- within a method or block and are only accessible within it.
-// Instance Variables:
-// Static Variables: 
-
 /*
  * Java Data Types:
  
  * 1)Primitive Data Types:  ----------------->
  * byte, short, int,   long,  float, double,  char, and boolean
  * 8bit, 16bit, 32bit, 64bit, 32bit, 64bit,   16bit,   1bit
+ * Their lifecycle is managed directly by the JVM (manage and reclaim when scope ends)
  
  *  2)Non-Primitive (Reference) Data Types: ----------------> 
  * Strings, arrays, classes, and interfaces.
  * Garbage collection helps manage and reclaim memory in the heap when objects are no longer in use.
- * 
+ 
  */
 /*  
 
@@ -30,6 +26,7 @@ package org.logant.Basic;
 /*
  * -------------Java Wrapper Classes--------------------------
  * 
+ * when working with collections, generics, or when you want to call methods on them
  * Wrapper classes include helpful utility methods.
  * Wrapper classes are immutable
  * This is useful for security and consistency in multi-threaded environments.
@@ -47,6 +44,13 @@ package org.logant.Basic;
 // double	                Double
 // char	                    Character
 // boolean	                Boolean
+
+/*
+ * #### Java Variable Types:
+ * Local Variables:-- within a method or block and are only accessible within it.
+ * Instance Variables:
+ * Static Variables:
+ */
 
 public class VariablesAndDataTypes {
 
